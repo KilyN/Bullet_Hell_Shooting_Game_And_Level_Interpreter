@@ -1,0 +1,3 @@
+This game was created as a project for CS 487 by Luke Holbert, Kris Taylor, Josh Korn, and Kily Nhan.
+
+The song used during the boss fight is a remix of 'Because Princess Inada is Scolding Me' by Flandre-SDM, see https://www.youtube.com/watch?v=EqDdRcUYqsk for the song and https://www.youtube.com/user/ChrisSmiley22 for their channel.

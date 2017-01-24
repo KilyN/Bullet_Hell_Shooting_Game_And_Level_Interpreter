@@ -1,0 +1,2738 @@
+<Level>
+	<Groups>
+		<Group> // first visit
+			<SpawnTime>3</SpawnTime>
+			<Enemies>
+				<Number>10</Number>
+				<Spacing>20</Spacing>
+				<SpawnLocation x="120" y="-10" />
+				<XShift>40</XShift>
+				<Movements>
+					<Movement angle="1.58" duration="50" />
+					<Movement angle="1.58" duration="80" turnangle="-.07" />
+					<Movement angle="4.7" duration="100" />
+				</Movements>
+			</Enemies>
+		</Group>
+		<Group> // wave 2 , from left and straight down
+			<SpawnTime>6</SpawnTime>
+			<Enemies>
+				<Number>7</Number>
+				<Spacing>20</Spacing>
+				<SpawnLocation x="60" y="-50" />
+				<Movements>
+					<Movement angle="1.58" duration="50" />
+					<Movement angle="1.58" duration="80" turnangle="-.05" />
+					<Movement angle="1.58" duration="250" />
+				</Movements>
+			</Enemies>
+		</Group>
+		<Group>  // wave 3, from right and straight down
+			<SpawnTime>8</SpawnTime>
+			<Enemies>
+				<Number>7</Number>
+				<Spacing>20</Spacing>
+				<SpawnLocation x="540" y="-50" />
+				<Movements>
+					<Movement angle="1.58" duration="50" />
+					<Movement angle="1.58" duration="80" turnangle=".05" />
+					<Movement angle="1.58" duration="250" />
+				</Movements>
+			</Enemies>
+		</Group> 
+		<Group> // show up half circle on leftside of screen
+			<SpawnTime>10</SpawnTime>
+			<Enemies>
+				<Number>7</Number>
+				<Spacing>20</Spacing>
+				<SpawnLocation x="15" y="300" />
+				<Movements>
+					<Movement angle="-1" duration="50"  />
+					<Movement angle="0" duration="250" turnangle=".02" />
+				</Movements>
+			</Enemies>
+		</Group>
+		<Group> // show up half circle on rightside of screen
+			<SpawnTime>12</SpawnTime>
+			<Enemies>
+				<Number>7</Number>
+				<Spacing>20</Spacing>
+				<SpawnLocation x="560" y="70" />
+				<Movements>
+					<Movement angle="-110" duration="300" turnangle="-0.012"  />
+					
+					
+				</Movements>
+			</Enemies>
+		</Group>
+		<Group>
+			<SpawnTime>17</SpawnTime>
+			<Enemies>
+				<Number>1</Number>
+				<Spacing>20</Spacing>
+				<SpawnLocation x="400" y="-50" />
+				<XShift>0</XShift>
+				<Movements>
+					<Movement angle="1.58" duration="60" />
+					<Freeze time="50"/>
+					<Movement angle="3" duration="150" speed="200" turnangle = ".1"/>   // spin
+					<Movement angle="1.58" duration="240"/>            // straight down
+				</Movements>
+			</Enemies>
+			<Bullets>
+				<Bullet>
+					<Time>80</Time>
+					<Movements>
+						<Movement angle="1.58" duration="500"  />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>90</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>90</Time>
+					<Movements>
+						<Movement angle="1.56" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.58" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.54" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.62" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>120</Time>
+					<Movements>
+						<Movement angle="1.58" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>120</Time>
+					<Movements>
+						<Movement angle="1.62" duration="500"/>
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>120</Time>
+					<Movements>
+						<Movement angle="1.66" duration="500"/>
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>180</Time>
+					<Movements>
+						<Movement angle="1.58" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>180</Time>
+					<Movements>
+						<Movement angle="1.62" duration="500"/>
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>180</Time>
+					<Movements>
+						<Movement angle="1.66" duration="500"/>
+					</Movements>
+				</Bullet>
+			</Bullets>
+		</Group>
+		<Group> // speedy team 
+			<SpawnTime>20</SpawnTime>
+			<Enemies>
+				<Number>7</Number>
+				<Spacing>20</Spacing>
+				<SpawnLocation x="560" y="700" />
+				<Movements>
+					<Movement angle="-110" duration="200" turnangle = ".012" speed= "700" />
+				</Movements>
+			</Enemies>
+		</Group>
+		<Group> // Suicide team : appear from right screen and hit the player right the way
+			<SpawnTime>25</SpawnTime>
+			<Enemies>
+				<Number>7</Number>
+				<Spacing>20</Spacing>
+				<SpawnLocation x="560" y="400" />
+				<Movements>
+					<Movement angle="-110" duration="200" turnangle = "-.012" speed= "220" />
+				</Movements>
+			</Enemies>
+		</Group>
+		
+		
+		<Group>
+			<SpawnTime>29</SpawnTime> // straight down from left , to bottom right with shooting
+			<Enemies>
+				<Number>5</Number>
+				<Spacing>15</Spacing>
+				<SpawnLocation x="60" y="-50" />
+				<Movements>
+					<Movement angle="1.58" duration="50" />
+					<Movement angle="1.58" duration="80" turnangle="-.02" speed="700" />
+					<Movement angle="0" duration="200" />
+				</Movements>
+			</Enemies>
+			<Bullets>
+				
+				<Bullet>
+					<Time>94</Time>
+					<Movements>
+						<Movement angle="1.70" duration="100" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>96</Time>
+					<Movements>
+						<Movement angle="1.80" duration="100" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>98</Time>
+					<Movements>
+						<Movement angle="1.90" duration="100" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.92" duration="100" />
+					</Movements>
+				</Bullet>
+			
+			
+			</Bullets>
+		</Group>
+		<Group>
+			<SpawnTime>35</SpawnTime>
+			<Enemies>
+				<Number>7</Number>
+				<Spacing>15</Spacing>
+				<SpawnLocation x="540" y="-50" />
+				<Movements>
+					<Movement angle="1.58" duration="50" />
+					<Movement angle="1.58" duration="80" turnangle=".02" />
+					<Movement angle="3.14" duration="50" />
+					<Movement angle="1.70" duration="200" />
+				</Movements>
+			</Enemies>
+			<Bullets>
+				
+				<Bullet>
+					<Time>40</Time>
+					<Movements>
+						<Movement angle="1.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>80</Time>
+					<Movements>
+						<Movement angle="90.0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>250</Time>
+					<Movements>
+						<Movement angle="170.0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>251</Time>
+					<Movements>
+						<Movement angle="170.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>251</Time>
+					<Movements>
+						<Movement angle="170.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>253</Time>
+					<Movements>
+						<Movement angle="170.3" duration="500" />
+					</Movements>
+				</Bullet>
+				
+			</Bullets>
+		</Group>
+		<Group> // show up half circle on leftside of screen
+			<SpawnTime>40</SpawnTime>
+			<Enemies>
+				<Number>7</Number>
+				<Spacing>20</Spacing>
+				<SpawnLocation x="15" y="300" />
+				<Movements>
+					<Movement angle="-1" duration="50"  />
+					<Movement angle="0" duration="250" turnangle=".02" />
+				</Movements>
+			</Enemies>
+		</Group>
+		
+		<Group> // show up half circle on rightside of screen
+			<SpawnTime>43</SpawnTime>
+			<Enemies>
+				<Number>7</Number>
+				<Spacing>20</Spacing>
+				<SpawnLocation x="560" y="70" />
+				<Movements>
+					<Movement angle="-110" duration="300" turnangle="-0.012"  />
+					
+					
+				</Movements>
+			</Enemies>
+		</Group>
+		
+		<Group>
+			<SpawnTime>44</SpawnTime>
+			<Enemies>
+				<Number>1</Number>
+				<Spacing>20</Spacing>
+				<SpawnLocation x="200" y="-50" />
+				<XShift>0</XShift>
+				<Movements>
+					<Movement angle="1.58" duration="50" />
+					<Freeze time="20"/>
+					<Movement angle="7" duration="10" turnangle ="0.02" />
+					<Movement angle="70" duration="200" speed ="500" />
+				</Movements>
+			</Enemies>
+			<Bullets>
+				<Bullet>
+					<Time>80</Time>
+					<Movements>
+						<Movement angle="1.58" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>90</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>90</Time>
+					<Movements>
+						<Movement angle="1.56" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.58" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.54" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.62" duration="500" />
+					</Movements>
+				</Bullet>
+			</Bullets>
+		</Group>
+		
+		<Group>
+			<SpawnTime>48</SpawnTime>
+			<Enemies>
+				<Number>1</Number>
+				<Spacing>20</Spacing>
+				<SpawnLocation x="400" y="-50" />
+				<XShift>0</XShift>
+				<Movements>
+					<Movement angle="1.58" duration="60" />
+					<Freeze time="50"/>
+					<Movement angle="3" duration="400" speed="300" />
+				</Movements>
+			</Enemies>
+			<Bullets>
+				<Bullet>
+					<Time>80</Time>
+					<Movements>
+						<Movement angle="1.58" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>90</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>90</Time>
+					<Movements>
+						<Movement angle="1.56" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.58" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.54" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.62" duration="500" />
+					</Movements>
+				</Bullet>
+			</Bullets>
+		</Group>
+		<Group>
+			<SpawnTime>50</SpawnTime>
+			<Enemies>
+				<Number>1</Number>
+				<Spacing>0</Spacing>
+				<Health>200</Health>
+				<SpawnLocation x="200" y="-50" />
+				<Movements>
+					<Movement angle=".79" duration="50" speed="300"/>
+					<Freeze time="100"/>
+					<Movement angle="2.36" duration="20" speed="300"/>
+					<Freeze time="100"/>
+					<Movement angle="3.83" duration="20" speed="300"/>
+					<Freeze time="100"/>
+					<Movement angle="0" duration="30" speed="300"/>
+					<Freeze time="100"/>
+					<Movement angle="2.36" duration="20" speed="300"/>
+					<Freeze time="100"/>
+					<Movement angle="3.83" duration="20" speed="300"/>
+					<Freeze time="100"/>
+					<Movement angle="0" duration="30" speed="300"/>
+					<Freeze time="100"/>
+					<Movement angle="2.36" duration="20" speed="300"/>
+					<Freeze time="100"/>
+					<Movement angle="3.83" duration="20" speed="300"/>
+					<Freeze time="100"/>
+					<Movement angle="0" duration="30" speed="300"/>
+					<Freeze time="100"/>
+					<Movement angle="3.83" duration="150" speed="300"/>
+				</Movements>
+			</Enemies>
+			<Bullets>
+				<Bullet>
+					<Time>80</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>80</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>80</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>80</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>80</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>80</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>90</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>90</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>90</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>90</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>90</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>90</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>100</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>200</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>210</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>220</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>300</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>300</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>300</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>300</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>300</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>300</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>310</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>310</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>310</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>310</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>310</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>310</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>320</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>320</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>320</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>320</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>320</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>320</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>440</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>450</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>460</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>540</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>540</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>540</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>540</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>540</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>540</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>550</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>550</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>550</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>550</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>550</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>550</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>560</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>560</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>560</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>560</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>560</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>560</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>680</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>690</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>700</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>800</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>800</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>800</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>800</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>800</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>800</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>810</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>810</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>810</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>810</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>810</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>810</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>820</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>820</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>820</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>820</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>820</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>820</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>950</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>960</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>970</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1050</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1050</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1050</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1050</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1050</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1050</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1060</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1060</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1060</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1060</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1060</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1060</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1070</Time>
+					<Movements>
+						<Movement angle="1.60" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1070</Time>
+					<Movements>
+						<Movement angle="1.70" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1070</Time>
+					<Movements>
+						<Movement angle="1.80" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1070</Time>
+					<Movements>
+						<Movement angle="1.50" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1070</Time>
+					<Movements>
+						<Movement angle="1.40" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1070</Time>
+					<Movements>
+						<Movement angle="1.30" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1200</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1210</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="0" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle=".4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle=".8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="1.2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="1.6" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="2" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="2.4" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="2.8" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="3.16" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="3.52" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="3.9" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="4.3" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="4.7" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="5.1" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="5.5" duration="500" />
+					</Movements>
+				</Bullet>
+				<Bullet>
+					<Time>1220</Time>
+					<Movements>
+						<Movement angle="5.9" duration="500" />
+					</Movements>
+				</Bullet>
+			</Bullets>
+		</Group>
+		
+		<Group>
+			<SpawnTime>73</SpawnTime>
+			<Boss>True</Boss>
+			<Enemies>
+				<Number>1</Number>
+				<Spacing>0</Spacing>
+				<SpawnLocation x="50" y="-50" />
+				<Movements>
+					<Movement angle=".79" duration="60" speed="300"/>
+					<Freeze time="300"/>
+					<Movement angle="6" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="3.6" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="1.3" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="4.5" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="1.2" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="1.9" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="4.5" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="1.2" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="4.5" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="3.05" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle=".2" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="1.7" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="4.5" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="6" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="2.9" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="6" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="2.9" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="0" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="5" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="1.7" duration="25" speed="300"/>
+					<Freeze time="200"/>
+					<Movement angle="5" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="1.6" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="4.5" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="1.4" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="0" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="4.5" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="1.4" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="3.3" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="1.3" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="3.9" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="6" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="6.1" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="3.9" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle=".9" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="2.7" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="5.5" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="2.8" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="3.9" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="2.6" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="5.9" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="2.9" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="6" duration="25" speed="200"/>
+					<Freeze time="400"/>
+					<Movement angle="6" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="3.6" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="1.3" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="4.5" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="1.2" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="1.9" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="4.5" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="1.2" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="4.5" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="3.05" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle=".2" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="1.7" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="4.5" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="6" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="3.14" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="2.9" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="6" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="2.9" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="0" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="5" duration="25" speed="300"/>
+					<Freeze time="150"/>
+					<Movement angle="1.7" duration="25" speed="300"/>
+					<Freeze time="200"/>
+					<Movement angle="5" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="1.6" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="4.5" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="1.4" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="0" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="4.5" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="1.4" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="3.3" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="1.3" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="3.9" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="6" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="6.1" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="3.9" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle=".9" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="2.7" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="5.5" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="2.8" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="3.9" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="2.6" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="5.9" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="2.9" duration="25" speed="200"/>
+					<Freeze time="150"/>
+					<Movement angle="6" duration="25" speed="200"/>
+					<Freeze time="400"/>
+					<Movement angle="4.7" duration="200" speed="200"/>
+				</Movements>
+			</Enemies>
+			<Bullets>
+				<BulletGroup time="400" type="A" />
+				<BulletGroup time="580" type="D" />
+				<BulletGroup time="630" type="E" />
+				<BulletGroup time="760" type="A" />
+				<BulletGroup time="940" type="D" />
+				<BulletGroup time="990" type="E" />
+				<BulletGroup time="1120" type="A" />
+				<BulletGroup time="1300" type="D" />
+				<BulletGroup time="1350" type="E" />
+				<BulletGroup time="1480" type="A" />
+				<BulletGroup time="1660" type="D" />
+				<BulletGroup time="1710" type="E" />
+				<BulletGroup time="1840" type="A" />
+				<BulletGroup time="2020" type="D" />
+				<BulletGroup time="2070" type="E" />
+				<BulletGroup time="2200" type="A" />
+				<BulletGroup time="2375" type="D" />
+				<BulletGroup time="2425" type="E" />
+				<BulletGroup time="2560" type="A" />
+				<BulletGroup time="2740" type="D" />
+				<BulletGroup time="2790" type="E" />
+				<BulletGroup time="2920" type="A" />
+				<BulletGroup time="3100" type="D" />
+				<BulletGroup time="3150" type="E" />
+				<BulletGroup time="3280" type="A" />
+				<BulletGroup time="3460" type="D" />
+				<BulletGroup time="3510" type="E" />
+				<BulletGroup time="3620" type="A" />
+				<BulletGroup time="3850" type="H" />
+				<BulletGroup time="4020" type="H" />
+				<BulletGroup time="4200" type="H" />
+				<BulletGroup time="4380" type="H" />
+				<BulletGroup time="4560" type="H" />
+				<BulletGroup time="4740" type="H" />
+				<BulletGroup time="4900" type="H" />
+				<BulletGroup time="5080" type="H" />
+				<BulletGroup time="5250" type="H" />
+				<BulletGroup time="5425" type="H" />
+				<BulletGroup time="5600" type="H" />
+				<BulletGroup time="5775" type="H" />
+				<BulletGroup time="5950" type="H" />
+				<BulletGroup time="6125" type="H" />
+				<BulletGroup time="6300" type="H" />
+				<BulletGroup time="6475" type="H" />
+				<BulletGroup time="6650" type="H" />
+				<BulletGroup time="6825" type="H" />
+				<BulletGroup time="7000" type="H" />
+				<BulletGroup time="7175" type="H" />
+				<BulletGroup time="7350" type="H" />
+				<BulletGroup time="7525" type="H" />
+				<BulletGroup time="7700" type="H" />
+				<BulletGroup time="8125" type="B" />
+				<BulletGroup time="8300" type="F" />
+				<BulletGroup time="8350" type="G" />
+				<BulletGroup time="8475" type="B" />
+				<BulletGroup time="8650" type="F" />
+				<BulletGroup time="8700" type="G" />
+				<BulletGroup time="8825" type="B" />
+				<BulletGroup time="9000" type="F" />
+				<BulletGroup time="9050" type="G" />
+				<BulletGroup time="9175" type="B" />
+				<BulletGroup time="9350" type="F" />
+				<BulletGroup time="9400" type="G" />
+				<BulletGroup time="9525" type="B" />
+				<BulletGroup time="9700" type="F" />
+				<BulletGroup time="9750" type="G" />
+				<BulletGroup time="9875" type="B" />
+				<BulletGroup time="10050" type="F" />
+				<BulletGroup time="10100" type="G" />
+				<BulletGroup time="10225" type="B" />
+				<BulletGroup time="10400" type="F" />
+				<BulletGroup time="10450" type="G" />
+				<BulletGroup time="10575" type="B" />
+				<BulletGroup time="10750" type="F" />
+				<BulletGroup time="10800" type="G" />
+				<BulletGroup time="10925" type="B" />
+				<BulletGroup time="11100" type="F" />
+				<BulletGroup time="11150" type="G" />
+				<BulletGroup time="11350" type="B" />
+				<BulletGroup time="11600" type="C" />
+				<BulletGroup time="11600" type="I" />
+				<BulletGroup time="11775" type="C" />
+				<BulletGroup time="11775" type="I" />
+				<BulletGroup time="11950" type="C" />
+				<BulletGroup time="11950" type="I" />
+				<BulletGroup time="12125" type="C" />
+				<BulletGroup time="12125" type="I" />
+				<BulletGroup time="12300" type="C" />
+				<BulletGroup time="12300" type="I" />
+				<BulletGroup time="12475" type="C" />
+				<BulletGroup time="12475" type="I" />
+				<BulletGroup time="12650" type="C" />
+				<BulletGroup time="12650" type="I" />
+				<BulletGroup time="12825" type="C" />
+				<BulletGroup time="12825" type="I" />
+				<BulletGroup time="13000" type="C" />
+				<BulletGroup time="13000" type="I" />
+				<BulletGroup time="13175" type="C" />
+				<BulletGroup time="13175" type="I" />
+				<BulletGroup time="13350" type="C" />
+				<BulletGroup time="13350" type="I" />
+				<BulletGroup time="13525" type="C" />
+				<BulletGroup time="13525" type="I" />
+				<BulletGroup time="13700" type="C" />
+				<BulletGroup time="13700" type="I" />
+				<BulletGroup time="13875" type="C" />
+				<BulletGroup time="13875" type="I" />
+				<BulletGroup time="14050" type="C" />
+				<BulletGroup time="14050" type="I" />
+				<BulletGroup time="14225" type="C" />
+				<BulletGroup time="14225" type="I" />
+				<BulletGroup time="14400" type="C" />
+				<BulletGroup time="14400" type="I" />
+				<BulletGroup time="14575" type="C" />
+				<BulletGroup time="14575" type="I" />
+				<BulletGroup time="14750" type="C" />
+				<BulletGroup time="14750" type="I" />
+				<BulletGroup time="14950" type="C" />
+				<BulletGroup time="14950" type="I" />
+				<BulletGroup time="15125" type="C" />
+				<BulletGroup time="15125" type="I" />
+				<BulletGroup time="15300" type="C" />
+				<BulletGroup time="15300" type="I" />
+				<BulletGroup time="15475" type="C" />
+				<BulletGroup time="15475" type="I" />
+			</Bullets>
+		</Group>
+		
+	</Groups>
+</Level>
